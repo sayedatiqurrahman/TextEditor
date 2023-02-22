@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9b3705c261.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="w-[90%]  h-[70vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <h1 class="text-center font-b
+        text-3xl underline">Text Editor</h1>
+        <div class="bg-slate-800 px-2">
+            <div class="flex flex-wrap justify-between gap-5">
+                <div class="text-xl ">
+                    <button id="bold" class="px-2 bg-slate-800 rounded-md">B</button>
+                    <button id="italic" class="px-2 bg-slate-800 rounded-md"><i>i</i></button>
+                    <button id="underline" class="px-2 bg-slate-800 rounded-md"><u>u</u></button>
+                </div>
+                <div class="flex gap-3">
+                    <button id="left"><i class="fas fa-align-left"></i></button>
+                    <button id="center"><i class="fas fa-align-center"></i></button>
+                    <button id="right"><i class="fas fa-align-right"></i></button>
+                    <button id="justify"><i class="fas fa-align-justify"></i></button>
+                </div>
+                <div class="flex gap-3">
+                    <button id="fontI">A+</button>
+                    <button id="fontD">A-</button>
+                    <input class="" id="colorinp" type="color" name="" id="">
+                </div>
+            </div>
+            <textarea id="text" class="w-full  h-96 p-3 outline-none" name="" id=""></textarea>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
